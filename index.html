@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> <!-- määritellään merkkivalikoima UTF-8, eli ääkköset näkyvät oikein sivulla -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokeilua</title>
+    <!-- Lisätään CSS-säännöt style-tagin sisään head-osan loppuun -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #special {
+            /* special -sääntö alkaa '#' */
+            background-color: #008002;
+            color: white;
+            font-size: 30px;
+            padding: 80px;
+        }
+
+        .muotoiltu {
+            /* class -sääntö alkaa '.' */
+            background-color: #D3D3D3;
+            padding: 10px;
+        }
+        /* Sivun kuvat responsiivisiksi*/
+        figure {
+            display: block;
+        }
+
+        figure img {
+            max-width: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Tämä on tärkeä otsikko</h1>
+        <p id="special">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid cum iure doloribus natus
+            quisquam cupiditate aspernatur corporis consequuntur unde in.</p>
+
+
+        <a href="images/html-tag.png" target="_blank" rel="noopener noreferrer">
+            <!-- Kuva responsiiviseksi, img -tagi pitää olla figure -tagin sisällä -->
+            <figure>
+                <img src="images/html-tag.png" alt="Cat is very grumpy">
+            </figure>
+        </a>
+
+        <p class="muotoiltu">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid cum iure doloribus natus
+            quisquam cupiditate aspernatur corporis consequuntur unde in.</p>
+        <p class="muotoiltu">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid cum iure doloribus natus
+            quisquam cupiditate aspernatur corporis consequuntur unde in.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid cum iure doloribus natus quisquam
+            cupiditate aspernatur corporis consequuntur unde in.</p>
+    </main>
+    <footer>
+        <p>2021 &copy; F.H.</p>
+        <p>2021 &copy; F.H.</p>
+    </footer>
+
+</body>
+
+</html>
